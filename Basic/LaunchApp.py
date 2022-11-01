@@ -14,7 +14,7 @@ desired_caps['appActivity'] = 'com.code2lead.kwad.MainActivity'
 
 
 # Webdriver object
-driver = webdriver.Remote("https://127.0.0.1:4723/wd/hub", desired_caps)
+driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", desired_caps)
 
 # Action on the app
 ele_id = driver.find_element(AppiumBy.ID, "com.code2lead.kwad:id/EnterValue")
