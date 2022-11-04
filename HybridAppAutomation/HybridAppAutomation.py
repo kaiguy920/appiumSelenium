@@ -53,25 +53,24 @@ appContexts = driver.contexts
 print("AppContexts : ", appContexts)
 #
 # # 5. switch to webview to perform action on Required URL or on WebView
-# for appType in appContexts:
-#     if appType == "WEBVIEW_chrome":
-#         driver.switch_to.context(appType)
+for appType in appContexts:
+    if appType == "WEBVIEW_chrome":
+        driver.switch_to.context(appType)
 #
 # # 6. Do testing on Webview screen in chrome browser or any if we want
-# ele4 = wait.until(lambda x: x.find_element(AppiumBy.XPATH, "//*[@name='q']"))
-# ele4.send_keys("Skill2Lead")
+ele4 = wait.until(lambda x: x.find_element(AppiumBy.XPATH, "//*[@name='q']"))
+ele4.send_keys("Skill2Lead")
 #
 # # 7. Switch back to native view to perform action
-# for appType in appContexts:
-#     if appType == "NATIVE_APP":
-#         driver.switch_to.context(appType)
+for appType in appContexts:
+    if appType == "NATIVE_APP":
+        driver.switch_to.context(appType)
 #
 # # 8. Do testing on native app screen if we want
-#
-# ele4 = wait.until(lambda x: x.find_element(AppiumBy.ID, "com.android.chrome:id/url_bar"))
-# ele4.click()
-# ele4.send_keys("https://www.skill2lead.com/")
-# driver.press_keycode(66)
+ele4 = wait.until(lambda x: x.find_element(AppiumBy.ID, "com.android.chrome:id/url_bar"))
+ele4.click()
+ele4.send_keys("https://www.skill2lead.com/")
+driver.press_keycode(66)
 
 # 9. Quit or close the driver object
 
