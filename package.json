@@ -2,7 +2,7 @@
   "dependencies": {
     "appium": "^2.0.0-beta.46",
     "appium-uiautomator2-driver": "^2.10.1",
-    "appium-xcuitest-driver": "^4.12.1",
+    "appium-xcuitest-driver": "^4.12.2",
     "selenium-appium": "^1.0.2",
     "webdriverio": "^7.25.4"
   },
